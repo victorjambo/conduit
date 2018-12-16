@@ -1,7 +1,7 @@
 {
-  "name": "travel-dup",
+  "name": "conduit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Medium.com clone",
   "main": "./src/index.js",
   "scripts": {
     "build-server": "babel src --out-dir dist -s",
@@ -20,9 +20,13 @@
     "db:rollback": "node_modules/.bin/sequelize db:migrate:undo:all",
     "db:rollmigrate": "yarn db:rollback && yarn db:migrate && yarn db:seed"
   },
-  "keywords": [],
-  "author": "me",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorjambo/conduit.git"
+  },
+  "keywords": ["victor", "mutai"],
+  "author": "Victor Mutai",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
